@@ -1,0 +1,171 @@
+.headingg {
+  background-image: url(../../images/background/magcom.jpg);
+  background-color: #27374d;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 30rem;
+  padding: 10rem;
+  color: white;
+}
+.headingg h1 {
+  font-size: 90px;
+}
+.headingg p {
+  width: 55%;
+  letter-spacing: 0.6px;
+  line-height: 2rem;
+}
+.content-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.content-body .mag-top {
+  width: 80%;
+  /* background-color: red; */
+  display: grid;
+  gap: 1.2rem;
+}
+.mag-top-text {
+  font-size: 16px;
+  text-align: justify;
+  display: grid;
+  gap: 1rem;
+  line-height: 1.5rem;
+}
+.features {
+  display: grid;
+  gap: 0.6rem;
+}
+.features h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.features ul {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  gap: 2rem;
+}
+.features ul li {
+  list-style: none;
+  background: rgba(43, 98, 119, 0.45);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(43, 98, 119, 0.3);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem 5rem;
+  border-radius: 2rem;
+  box-shadow: 0px 15px 15px 3px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  font-weight: 500;
+}
+.content-body .mag-middle {
+  width: 80%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 3rem;
+  box-shadow: 3px 9px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.content-body .mag-middle img {
+  border-radius: 3rem;
+  box-shadow: 17px 13px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.content-body .mag-middle .mag-text {
+  background-color: whitesmoke;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom-right-radius: 3rem;
+  border-top-right-radius: 3rem;
+  height: 100%;
+  padding: 0rem 3rem 0rem 0rem;
+  text-align: justify;
+}
+.content-body .mag-middle .mag-text h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.content-body .mag-middle .mag-text p {
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+.content-body .mag-middle .mag-text p span {
+  color: rgb(43, 98, 119);
+}
+.content-body .mag-btm {
+  width: 80%;
+
+  display: grid;
+  gap: 1rem;
+}
+.content-body .mag-btm h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.benefits {
+  display: grid;
+  gap: 1.5rem;
+  /* padding: 1rem; */
+}
+.benefit {
+  background: rgba(195, 195, 195, 0.45);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(195, 195, 195, 0.3);
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 3px 9px 15px 0px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 0.6rem;
+}
+.benefit-head {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.benefit-head h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.benefit p {
+  text-align: justify;
+  padding: 0rem 2rem;
+}
+@media screen and (max-width: 1250px) {
+  .headingg {
+    height: 20rem;
+    padding: 7rem;
+  }
+  .headingg h1 {
+    font-size: 60px;
+  }
+  .headingg p {
+    width: 80%;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+  .content-body {
+    background-color: red;
+  }
+  .content-body .mag-top {
+    width: 100%;
+    /* background-color: red; */
+    display: grid;
+    gap: 1.2rem;
+  }
+}

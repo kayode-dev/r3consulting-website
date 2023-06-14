@@ -1,0 +1,195 @@
+.headin {
+  background-image: url(../images/background/pexels-sergey-katyshkin-7011445.jpg);
+  background-color: #526d82;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 30rem;
+  padding: 10rem;
+  color: white;
+}
+.headin h1 {
+  font-size: 90px;
+}
+.headin p {
+  width: 55%;
+  letter-spacing: 0.6px;
+  line-height: 2rem;
+}
+.txtcontent {
+  /* background-color: red; */
+  display: grid;
+  gap: 2rem;
+  place-items: center;
+}
+.txtcontent .cntxt {
+  /* background-color: aqua; */
+  display: grid;
+  gap: 10rem;
+  width: 90%;
+}
+.txtcontent .cntxt .top {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 4fr 3fr;
+
+  /* background-color: antiquewhite; */
+}
+.txtcontent .cntxt .top h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.txtcontent .cntxt .top p {
+  font-weight: 400;
+  text-align: justify;
+}
+.txtcontent .cntxt .top h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.txtcontent .cntxt .top ul li {
+  font-size: 20px;
+  gap: 1rem;
+}
+.txtcontent .cntxt .top img,
+.txtcontent .cntxt .bottom img {
+  border-radius: 2rem;
+  box-shadow: 0px 15px 15px 5px rgba(0, 0, 0, 0.1);
+}
+.txtcontent .cntxt .bottom {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 3fr 4fr;
+  background-color: #27374d;
+  /* background-color: #526d82; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  color: white;
+}
+.txtcontent .cntxt .bottom .text {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem 1rem 0rem;
+}
+.txtcontent .cntxt .bottom .text h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.txtcontent .cntxt .bottom .text ul {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  /* background-color: antiquewhite; */
+}
+.txtcontent .cntxt .bottom .text ul li {
+  display: grid;
+  list-style: none;
+  gap: 0.3rem;
+  margin-left: 0px;
+  padding-left: 0px;
+  /* background-color: #526d82; */
+}
+.txtcontent .cntxt .bottom .text ul li .head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.txtcontent .cntxt .bottom .text ul li .con {
+  text-align: justify;
+}
+.txtcontent .cntxt .bottom .text ul li .con p {
+  letter-spacing: 0.4px;
+  line-height: 1.7rem;
+  font-weight: 300;
+}
+@media screen and (max-width: 1250px) {
+  .headin {
+    height: 20rem;
+    padding: 7rem;
+  }
+  .headin h1 {
+    font-size: 60px;
+  }
+  .headin p {
+    width: 80%;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+  .txtcontent .cntxt {
+    gap: 5rem;
+  }
+  .txtcontent .cntxt .top {
+    display: flex;
+    gap: 2rem;
+  }
+  .txtcontent .cntxt .top img {
+    height: 600px;
+    width: 400px;
+    display: none;
+  }
+
+  .txtcontent .cntxt .top ul {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .txtcontent .cntxt .top p,
+  .txtcontent .cntxt .top ul li {
+    font-size: 17px;
+    text-align: left;
+  }
+  .txtcontent .cntxt .bottom {
+    display: flex;
+    gap: 2rem;
+    background-image: url(../images/static/why-sap.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #526d82;
+    background-blend-mode: multiply;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+  }
+  .txtcontent .cntxt .bottom img {
+    display: none;
+  }
+  .txtcontent .cntxt .bottom .text {
+    padding: 2rem;
+  }
+  .txtcontent .cntxt .bottom .text h2 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .txtcontent .cntxt .bottom .text ul {
+    display: grid;
+    /* grid-template-columns: 2fr 2fr; */
+    place-items: center;
+    padding-left: 0rem;
+    gap: 1rem;
+  }
+  .txtcontent .cntxt .bottom .text ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1rem;
+    margin-left: 0px;
+    padding-left: 0px;
+    background-color: #526d82;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    height: 270px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  .txtcontent .cntxt .bottom .text ul li .head h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 20px;
+  }
+  .txtcontent .cntxt .bottom .text ul li .con {
+    height: 100%;
+    text-align: left;
+  }
+}

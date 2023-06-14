@@ -1,0 +1,207 @@
+/* .containerrr {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentt {
+  margin-top: 6rem;
+  width: 80%;
+}
+.contentt .overview {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+/* .contentt .overview .image {
+  background-image: url(./images/background/pexels-sergey-katyshkin-7011445.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 30rem;
+} */
+.contentt .overview .text {
+  backdrop-filter: blur(5px);
+}
+.contentt .overview h2 {
+  font-size: 60px;
+  margin-bottom: 1rem;
+}
+.contentt .overview p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 2rem;
+  /* width: 60%; */
+  color: black;
+  text-align: justify;
+}
+.contentt .mission-vision {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 10rem;
+  padding: 5rem;
+  /* height: 70vh; */
+}
+.contentt .mission-vision .vision,
+.contentt .mission-vision .mission {
+  background-color: #dde6ed;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  border-radius: 1.5rem;
+}
+.contentt .mission-vision .heading {
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 40%;
+  background-color: black;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.contentt .mission-vision .vision .heading {
+  background-image: url(../images/static/vis\ .jpg);
+}
+.contentt .mission-vision .mission .heading {
+  background-image: url(../images/static/mission.jpg);
+}
+.contentt .mission-vision .text {
+  padding: 2rem;
+  line-height: 2rem;
+  height: 60%;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  background: rgb(39, 55, 77);
+  background: linear-gradient(
+    53deg,
+    rgba(39, 55, 77, 1) 0%,
+    rgba(82, 109, 130, 1) 21%,
+    rgba(70, 93, 115, 1) 66%,
+    rgba(39, 55, 77, 1) 83%
+  );
+  color: white;
+}
+.contentt .cores {
+  padding: 2rem 3rem;
+  display: grid;
+  gap: 2rem;
+  /* height: 60vh; */
+}
+.contentt .cores h2 {
+  font-size: 60px;
+  font-weight: 300;
+}
+.contentt .cores .core-list {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+.contentt .cores .core-list .core {
+  height: 20rem;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.3rem;
+  color: white;
+  background-color: #27374d;
+  background-blend-mode: hard-light;
+}
+.contentt .cores .core-list .core.integrity {
+  background-image: url(../images/core/integrity.jpg);
+}
+.contentt .cores .core-list .core.excellence {
+  background-image: url(../images/core/excel.jpg);
+}
+.contentt .cores .core-list .core.accountability {
+  background-image: url(../images/core/account.jpg);
+}
+.contentt .cores .core-list .core.service {
+  background-image: url(../images/core/service.jpg);
+}
+.contentt .cores .core-list .core.commitment {
+  background-image: url(../images/core/commitment.jpg);
+}
+.contentt .cores .core-list .core .text {
+  /* background-color: red; */
+  height: 100%;
+  padding: 2rem;
+  width: 100%;
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1.3rem;
+  align-items: center;
+}
+.contentt .cores .core-list .core h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1.1px;
+}
+.contentt .cores .core-list .core p {
+  text-align: center;
+  text-transform: capitalize;
+}
+.contentt .cores .core-list .core .footer {
+  padding: 3rem 7rem;
+  background: rgb(39, 55, 77);
+  background: linear-gradient(
+    53deg,
+    rgba(39, 55, 77, 1) 0%,
+    rgba(39, 55, 77, 1) 33%,
+    rgba(82, 109, 130, 1) 77%,
+    rgba(39, 55, 77, 1) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (max-width: 1250px) {
+  .contentt .mission-vision {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem;
+  }
+  .contentt .cores {
+    padding: 0rem;
+  }
+  .contentt .cores h2 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .contentt .cores .core-list {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 2fr 2fr; */
+    padding: 0rem 0rem 3rem;
+  }
+  .contentt .cores .core-list .core {
+    height: 15rem;
+  }
+  .contentt .mission-vision .vision,
+  .contentt .mission-vision .mission {
+    height: 350px;
+  }
+}

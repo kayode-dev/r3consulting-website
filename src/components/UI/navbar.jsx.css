@@ -1,0 +1,126 @@
+.navibar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  background-color: #526d82;
+  box-shadow: 0px 16px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  /* height: 5rem; */
+  background: rgba(82, 109, 130, 0.43);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+}
+.navibar .links ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: max-content;
+  padding-left: 0rem;
+  margin-bottom: 0px;
+}
+.navibar .links ul .link {
+  width: 8rem;
+  position: relative;
+  height: 100%;
+}
+.navibar .links ul .link .dropdowns {
+  border-radius: 10px;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  transform: translateY(10px);
+  width: max-content;
+  background: rgba(82, 109, 130, 0.73);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  /* -webkit-backdrop-filter: blur(8.5px); */
+  opacity: 0;
+  visibility: hidden;
+  /* display: none; */
+}
+.navibar .links ul .link:hover .dropdowns {
+  opacity: 1;
+  display: block;
+  transform: translate(0, 0);
+  visibility: visible;
+}
+.navibar .links ul .link .dropdowns a {
+  border-radius: 0px;
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.navibar .links ul .link .dropdowns a:hover:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.navibar .links ul .link .dropdowns a:hover:nth-last-child(1) {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.navibar .links ul .link .dropdowns a:hover {
+  border-radius: 0px;
+}
+.navibar .links ul .link a.active {
+  text-decoration: none;
+  color: #27374d;
+  background-color: white;
+  box-shadow: 0 15px 39px rgba(0, 0, 0, 0.2);
+}
+.navibar .links ul .link a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+.navibar .links ul .link a:hover {
+  background-color: white;
+  color: #27374d;
+}
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+.actions button {
+  box-shadow: 0 15px 39px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+}
+.actions button#contact {
+  background-color: #dde6ed;
+  color: #27374d;
+}
+.actions button#contact:hover {
+  /* background-color: #526D82; */
+  background-color: #27374d;
+  color: white;
+}
+.actions button#demo {
+  background-color: #9db2bf;
+}
+.actions button#demo:hover {
+  background-color: #27374d;
+}

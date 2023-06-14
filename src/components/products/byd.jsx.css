@@ -1,0 +1,122 @@
+.heading-byd {
+  background-image: url(../../images/background/bydbg.jpg);
+  background-color: #27374d;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 30rem;
+  padding: 10rem;
+  color: white;
+}
+
+.heading-byd h1 {
+  font-size: 90px;
+}
+.heading-byd p {
+  width: 55%;
+  letter-spacing: 0.6px;
+  line-height: 2rem;
+}
+.byd-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.byd-top {
+  width: 80%;
+  /* background-color: red; */
+  display: grid;
+  gap: 1.2rem;
+}
+.byd-top-text {
+  font-size: 16px;
+  text-align: justify;
+  display: grid;
+  gap: 1rem;
+  line-height: 1.5rem;
+}
+.byd-features {
+  display: grid;
+  gap: 0.6rem;
+}
+.byd-features h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.byd-feat-list {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 2rem;
+}
+.byd-feat {
+  background: rgba(43, 98, 119, 0.45);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(43, 98, 119, 0.3);
+  padding: 1.3rem 1rem;
+  border-radius: 2rem;
+  box-shadow: 0px 15px 15px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+.byd-feat h3 {
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+  /* background-color: palevioletred; */
+  width: 100%;
+}
+.byd-feat ul {
+  list-style: circle;
+  /* background-color: yellow; */
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 15px;
+}
+.byd-btm {
+  width: 80%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 3rem;
+  box-shadow: 3px 9px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.byd-btm img {
+  border-radius: 3rem;
+  box-shadow: 17px 13px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.byd-btm .byd-text {
+  background-color: whitesmoke;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom-right-radius: 3rem;
+  border-top-right-radius: 3rem;
+  height: 100%;
+  padding: 0rem 3rem 0rem 0rem;
+  text-align: justify;
+}
+.byd-btm .byd-text h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.byd-btm .byd-text p {
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+.byd-btm .byd-text p span {
+  color: rgb(43, 98, 119);
+}

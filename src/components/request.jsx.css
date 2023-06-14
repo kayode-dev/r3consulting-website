@@ -1,0 +1,79 @@
+.headinnnn {
+  background-image: url(../images/background/handshake.jpg);
+  background-color: #526d82;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 30rem;
+  padding: 10rem;
+  color: white;
+}
+
+.request-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 4rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.headinnnn h1 {
+  font-size: 90px;
+}
+.form-wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  /* background-color: green; */
+}
+
+.form-wrapp form {
+  width: 100%;
+  max-height: 100%;
+  border-radius: 16px;
+}
+
+.demo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: gold; */
+  background-image: url(../images/core/demo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 50%;
+  min-height: 100%;
+  border-radius: 16px;
+  box-shadow: 0px 15px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-wrapp form div label {
+  font-size: 17px;
+  font-weight: 500;
+}
+.form-wrapp form div input {
+  padding: 2rem 1rem;
+  outline: none;
+}
+.form-wrapp form div input:focus {
+  border: 1px solid #526d82;
+}
+.form-wrapp form div select {
+  outline: none;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(82, 109, 130, 0.3);
+  display: flex;
+}
+
+.button-holder button {
+  width: 40%;
+}

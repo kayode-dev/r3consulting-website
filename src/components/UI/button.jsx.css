@@ -1,0 +1,18 @@
+.uni-button {
+  width: 30%;
+  box-shadow: 0 15px 39px rgba(0, 0, 0, 0.2);
+  padding: 1.6rem 1.7rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  outline: none;
+  border-radius: 5px;
+  border: 3px solid #27374d;
+  background-color: #27374d;
+  color: white;
+}
+
+.uni-button:hover {
+  background-color: transparent;
+  font-weight: 700;
+  color: #27374d;
+}

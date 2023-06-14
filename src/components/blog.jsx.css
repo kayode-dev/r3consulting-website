@@ -1,0 +1,113 @@
+.content .headinn {
+  background-image: url(../images/background/blogg.jpg);
+  background-color: #526d82;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 30rem;
+  padding: 10rem;
+  color: white;
+}
+.content .headinn h1 {
+  font-size: 90px;
+}
+.content .headinn p {
+  font-size: 20px;
+}
+.blogPosts {
+  /* background-color: red; */
+  display: grid;
+  place-items: center;
+}
+.blogPosts .posts {
+  /* background-color: green; */
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  gap: 5rem;
+  width: 90%;
+}
+.blogPosts .posts .post {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  padding: 2rem 2rem 0.7rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all ease-in-out 100ms;
+}
+.blogPosts .posts .post:hover {
+  transition: all ease-in-out 100ms;
+  background: rgba(82, 109, 130, 0.33);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(82, 109, 130, 0.3);
+}
+.blogPosts .posts .post:hover img {
+  transform: scale(1.04);
+}
+.blogPosts .posts .post img {
+  border-radius: 1rem;
+  box-shadow: 0px 15px 15px 5px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+.blogPosts .posts .post .postTxt {
+  /* background-color: #526d82; */
+  display: grid;
+  gap: 0.4rem;
+}
+.blogPosts .posts .post .postTxt h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.blogPosts .posts .post .postTxt p {
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+@media screen and (max-width: 1250px) {
+  .content .headinn {
+    height: 20rem;
+    padding: 7.5rem;
+  }
+  .content .headinn h1 {
+    font-size: 60px;
+  }
+  .content .headinn p {
+    width: 80%;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+  .blogPosts {
+  }
+  .blogPosts .posts {
+    /* background-color: green; */
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 2rem;
+    width: 100%;
+    /* padding: 2rem; */
+  }
+  .blogPosts .posts .post {
+    width: 390px;
+    overflow: hidden;
+    padding: 2rem 1rem;
+  }
+  .blogPosts .posts .post img {
+    height: 220px;
+  }
+  .blogPosts .posts .post .postTxt {
+    width: 90%;
+  }
+  .blogPosts .posts .post .postTxt h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
